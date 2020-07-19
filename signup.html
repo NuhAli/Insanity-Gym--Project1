@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <title>Insanity Gym | Project 2</title>
+</head>
+<body>
+
+<!-- Nav Bar -->
+    <nav class="nav">
+        <div class="logo">
+            <h1>Insanity Gym</h1>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ourfacilities.html">Our Facility</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="signup.html">Join Us</a></li>
+        </ul>
+    </nav>
+<!-- Nav Bar End -->
+
+<!-- Section 1 Form -->
+    <section class="sign-up">
+        <form action="#">
+            <div class="form-container">
+                <h2>Sign up</h2>
+                <p>Please fill in the form below</p>
+                <hr>
+                <label for="name">Full Name:</label>
+                <input type="text" for="name" id="full-name" placeholder="Enter full name:" required>
+                <label for="email">Email Adress:</label>
+                <input type="text" for="email" id="email-adress" placeholder="Enter your email address:" required>
+                <label for="password">Password</label>
+                <input type="password" for="password" id="password" placeholder="Enter password:" required>
+                <label for="repassword">Repeat Password</label>
+                <input type="password" for="repassword" id="re-password" placeholder="Enter password again:" required>
+                <label for="checked">
+                    <input type="checkbox" id="checked" required> Remember me
+                </label>
+                <p>
+                    By creating an account with us you agree to our <span id="tc">terms & conditions</span>.
+                </p>
+                <button id="signup-button">Sign up</button>
+            </div>
+        </form>
+    </section>
+<!-- Section 1 end -->
+
+<!-- Section 2 Contact Us -->
+    <section class="contact-us">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="method">
+                <p>
+                    <i class="fas fa-map-pin"></i> Hampstead, London NW7
+                </p>
+            </div>
+            <div class="method">
+                <p>
+                    <i class="fas fa-phone-square-alt"></i>   0208-XXX-XXX
+                </p>
+            </div>
+            <div class="method">
+                <p>
+                    <i class="fas fa-map-pin"></i> test@insanity.co.uk
+                </p>
+            </div>
+        </div>
+        <div class="connect-us">
+            <h3>Connect with us</h3>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+        </div>
+    </section>
+<!-- Section 2 contact Us end -->
+
+<!-- Footer -->
+    <footer>
+        <p>Insanity Gym - Portfolio Project| Designed and Developed by Nuh Mohamed Ali</p>
+    </footer>
+<!-- Footer End -->
+
+    <script src="script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+// Title Button on home.html
+
+.title-button {
+    border: 2px solid $primary-color;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+        border: none;
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+    }
+}
+
+// Learn More Button on home.html
+
+.learn-more {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    border: 2px solid $primary-color;
+    background-color: transparent;
+    color: white;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+        border: none;
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+    }
+}
+
+// Join Button
+.join {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    border: 2px solid $primary-color;
+    background-color: transparent;
+    color: white;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+        border: none;
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+    }
+}
+
+// Galley buttons on ourfacilities.html
+.gallery-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .filter {
+        margin: 1rem;
+        width: 9rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        background-color: darken($color: $primary-color, $amount: 10);
+        border: none;
+        color: white;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        
+        &:hover {
+            border: 2px solid $primary-color;
+            background-color: transparent;
+            transform: scale(1.05);
+            transition: all 0.5s ease;
+        }
+        @media screen and (max-width: 770px) {
+            display: none;
+        }
+    }
+}
+
+// Sign up button on signup.html
+#signup-button {
+    margin: 1rem auto;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 1px solid $primary-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+        border: none;
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+    }
+}
+

@@ -1,0 +1,66 @@
+// Imports
+@import 'colors';
+@import 'mediaqueries';
+@import 'common';
+@import 'buttons';
+
+// Sign up form
+.sign-up {
+    background-color: $background-color;
+    color: white;
+
+    form {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-container {
+            background-color: $background-color2;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $primary-color;
+
+            h2 {
+                color: $primary-color;
+                font-size: 2rem;
+                margin: 1rem 0 0.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 1rem 0;
+            }
+
+            hr {
+                border: 1px solid $primary-color;
+                margin-bottom: 1rem;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 1rem;
+                margin: 0.5rem 0 1.3rem 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+                outline: 2px solid $primary-color;
+            }
+
+            #tc {
+                color: $primary-color;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover {
+                    color: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+}
+// Form End

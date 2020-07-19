@@ -1,0 +1,344 @@
+@import 'colors';
+@import 'mediaqueries';
+@import 'buttons';
+// Global Styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    overflow-x: hidden;
+    background-color: $background-color;
+    position: relative;
+    scroll-behavior: smooth;
+    .back-top {
+        margin: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 0.5rem;
+        width: 0.5rem;
+        border: 2px solid $primary-color;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i.fas {
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            color: darken($primary-color, 20);
+            transition: all 0.5s ease;
+            i.fas {
+                color: darken($primary-color,10)
+            }
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 94rem;
+    margin: 0 auto;
+}
+// Global Styling end
+
+
+// Navigation Bar
+.nav {
+    height: 8vh;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color2;
+    border-bottom: 2px solid $primary-color;
+
+    .logo {
+        color: $primary-color;
+    }
+
+    .burger {
+        display: inline-block;
+        border: none;
+        border-radius: 5px;;
+        padding: 0.5rem;
+        background-color: $primary-color;
+        z-index: 3;
+        cursor:pointer;
+
+        .line1 {
+            background-color: $background-color;
+            height: 3px;
+            width: 20px;
+            margin-bottom: 2px;
+        }
+
+        .line2 {
+            background-color: $background-color;
+            height: 3px;
+            width: 20px;
+            margin-bottom: 2px;
+        }
+
+        .line3 {
+            background-color: $background-color;
+            height: 3px;
+            width: 20px;
+            margin-bottom: 2px;
+        }
+
+        &.toggle {
+            .line1 {
+                transform: rotate(45deg) translate(3px,4px);
+            }
+            .line2 {
+                opacity: 0;
+            }
+            .line3 {
+                transform: rotate(-45deg) translate(4px,-4px);
+            }
+        }
+
+        &:hover {
+            background-color: lighten($color: $primary-color, $amount: 20);
+        }
+
+    }
+        .nav-list {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    color: $primary-color;
+                    font-weight: bold;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        color: darken($background-color,20)
+                    }
+                }
+            }
+        }
+    }
+
+// Header 
+header {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/gym.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    border-bottom: 2px solid $primary-color;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    .showcase {
+        z-index: 2;
+
+        .title-area {
+            padding: 1rem;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            .main-title {
+                margin-bottom: 1rem;
+            }
+
+            .highlight {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// Gym Shop
+.gym-shop {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    padding: 2rem;
+
+    .shop-description {
+        width: 100%;
+
+        .section-title {
+            margin: 1rem 0;
+            color: $primary-color;
+        }
+
+        .inventory-lists {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 2rem;
+
+            .list1 {
+                margin: 1rem 0;
+    
+                h4 {
+                    color: $primary-color;
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+    
+                ul {
+                    list-style-type: none;
+    
+                    li::before {
+                        content: "\2022";
+                        color: $primary-color;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+            }
+    
+            .list2 {
+                margin: 1rem 0;
+    
+                h4 {
+                    color: $primary-color;
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+    
+                ul {
+                    list-style-type: none;
+                    
+                    li::before {
+                        margin-bottom: 0.5rem;
+                        content: "\2022";
+                        color: $primary-color;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Join us Banner
+.join-us {
+    height: 30vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        z-index: 2;
+
+        .highlight {
+            color: $primary-color;
+        }
+
+        @media screen and (max-width: 770px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Contact us Banner 
+.contact-us {
+    background-color: $background-color2;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+
+    .contact-info {
+        margin-right: 2rem;
+
+        h3 {
+            color: $primary-color;
+        }
+
+        .method {
+            margin: 1rem 0;
+
+            i.fas {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .connect-us {
+        
+        h3 {
+            color: $primary-color;
+        }
+
+        i.fab {
+            margin: 1rem 1rem 0 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-weight: bold;
+}
