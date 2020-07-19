@@ -349,9 +349,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/gym.jpg") center center;
+  background-image: url("../img/gym.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   text-align: center;
   border-bottom: 2px solid #e65f21; }
   header .overlay {
