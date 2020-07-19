@@ -155,10 +155,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../img/gym.jpg");
+    background: url("../img/gym.jpg") center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     text-align: center;
     border-bottom: 2px solid $primary-color;
 
