@@ -300,6 +300,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
