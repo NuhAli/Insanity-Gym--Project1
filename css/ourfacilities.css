@@ -811,6 +811,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal .modal-content {
+    height: 35%;
+  }
+}
+
 .modal .modal-content .modal-image-area {
   width: 100%;
   height: 100%;
@@ -915,6 +921,7 @@ footer {
   .gallery .image-gallery .weights img,
   .gallery .image-gallery .cardio img,
   .gallery .image-gallery .functional img {
+    height: 15rem;
     min-width: 90%;
     margin: 0.5rem 0.5rem;
   }
