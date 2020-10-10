@@ -142,13 +142,19 @@
                 border: 2px solid $primary-color;
 
                 @media screen and (max-width: 770px) {
-                    margin: 1rem 0;
-                    min-width: 100%;
-                    display: block;
+                    margin: 0.5rem 0;
+                    display: inline-block;
                     transform: scale(1);
+                }
+                @media screen and (max-width: 480px) {
+                    min-width: 90%;
+                    margin: 0.5rem 0.5rem;
                 }
             }
         }
+    }
+    @media screen and (max-width: 480px) {
+        padding: 1rem;
     }
 }
 // Section 1 End

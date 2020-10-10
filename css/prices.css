@@ -627,6 +627,20 @@ header .showcase .title-area .highlight {
   transition: all 0.4s ease;
 }
 
+@media screen and (max-width: 480px) {
+  .contact-us .connect-us {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 footer {
   text-align: center;
   padding: 2rem;

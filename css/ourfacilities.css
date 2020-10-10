@@ -627,6 +627,20 @@ header .showcase .title-area .highlight {
   transition: all 0.4s ease;
 }
 
+@media screen and (max-width: 480px) {
+  .contact-us .connect-us {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -891,9 +905,23 @@ footer {
   .gallery .image-gallery .weights img,
   .gallery .image-gallery .cardio img,
   .gallery .image-gallery .functional img {
-    margin: 1rem 0;
-    min-width: 100%;
-    display: block;
+    margin: 0.5rem 0;
+    display: inline-block;
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery .image-gallery .weights img,
+  .gallery .image-gallery .cardio img,
+  .gallery .image-gallery .functional img {
+    min-width: 90%;
+    margin: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    padding: 1rem;
   }
 }
