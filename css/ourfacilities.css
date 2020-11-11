@@ -445,7 +445,7 @@ a {
 
 header {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -475,7 +475,7 @@ header .showcase {
 
 header .showcase .title-area {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -486,7 +486,7 @@ header .showcase .title-area .main-title {
 }
 
 header .showcase .title-area .highlight {
-  color: #e65f21;
+  color: white;
 }
 
 .gym-shop {
@@ -578,8 +578,8 @@ header .showcase .title-area .highlight {
   z-index: 2;
 }
 
-.join-us h3 .highlight {
-  color: #e65f21;
+.join-us h3 .highlight-1 {
+  color: white;
 }
 
 @media screen and (max-width: 770px) {
@@ -646,6 +646,7 @@ footer {
   padding: 2rem;
   color: white;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .title-button {
@@ -829,6 +830,51 @@ footer {
 
 .modal.view {
   visibility: visible;
+}
+
+.facilities-header {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/facilities-header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center;
+  border-bottom: 2px solid #e65f21;
+}
+
+.facilities-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.facilities-header .showcase {
+  z-index: 2;
+}
+
+.facilities-header .showcase .title-area {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.facilities-header .showcase .title-area .main-title {
+  margin-bottom: 1rem;
+}
+
+.facilities-header .showcase .title-area .highlight {
+  color: white;
 }
 
 .gym-facilities {

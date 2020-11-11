@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <!-- Font Awesome Icons CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <title>Insanity Gym | Project 2</title>
 </head>
+
 <body>
-<!-- Nav Bar -->
+    <!-- Nav Bar -->
     <nav class="nav" id="nav">
         <div class="logo">
             <h1>Insanity Gym</h1>
@@ -29,9 +36,9 @@
             <li><a href="signup.html">Join us</a></li>
         </ul>
     </nav>
-<!-- Nav Bar End -->
+    <!-- Nav Bar End -->
 
-<!-- Header Start -->
+    <!-- Header Start -->
     <header>
         <div class="overlay"></div>
         <div class="showcase">
@@ -44,117 +51,129 @@
             <a href="signup.html"><button class="title-button">Join Now</button></a>
         </div>
     </header>
-<!-- Header End -->
+    <!-- Header End -->
 
-<!-- Section 1 Gyms Features -->
-        <section class="gym-features">
-            <div class="features-area">
-                <div class="container2">
-                    <div class="feature">
-                        <div class="feature-title">
-                            <h3><i class="fas fa-dumbbell"></i> Weight Training</h3>
-                        </div>
-                        <div class="feature-info">
-                            <p>   
-                                From bodybuilding to powerlifting and everything in between, Insanity gym has the equipment to help you reach your goals. With dumbells up to 150lbs, 7 squat racks, 5 deadlift platforms, 2 competition benches, and a variety of plate loaded and pin loaded machines, we have everything you need.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-title">
-                            <h3><i class="fas fa-running"></i> General Fitness</h3>
-                        </div>
-                        <div class="feature-info">
-                            <p>
-                                
-                                If your goals are to improve your overall health and wellness, we have everything you need.  We have cardio equipment spanning two floors including 8 stepmills, 15+ treadmills, row machines, exercise bikes, spin bikes, ellipticals, arc trainers and even a Jacob’s Ladder. In addition to cardio equipment, we have stretching areas with mats, foam rollers, bands, light weights, and much more.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-title">
-                            <h3><i class="fas fa-biking"></i> Functional Training</h3>
-                        </div>
-                        <div class="feature-info">
-                            <p>
-                                With 60 feet of turf with a sled, stackable plyometric boxes, weighted medicine balls, battle ropes, squat racks, and deadlift platforms our functional training room has all the equipment you need to take your training to the next level.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-title">
-                            <h3><i class="fas fa-users"></i> Group Exercise</h3>
-                        </div>
-                        <div class="feature-info">
-                            <p>
-                                From early morning to evening classes, our certified instructors will provide you with a challenging, yet fun workout! All levels of fitness are welcome. 
-                            </p>
-                        </div>
-                    </div>
-                    <button class="learn-more">Learn More</button>
-                </div>
-            </div>
-            <div class="img-area">
-                <div class="container">
-                    <div class="image-container">
-                        <img src="img/about-fitness-edited.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Section 1 End -->
-
-<!-- Section 2 Gym Shop Area -->
-        <section class="gym-shop">
+    <!-- Section 1 Gyms Features -->
+    <section class="gym-features">
+        <div class="features-area">
             <div class="container2">
-                <div class="shop-description">
-                    <div class="section-title">
-                        <h2>The Supplement Store</h2>
-                        <h2>& Shake Bar</h2>
+                <div class="feature">
+                    <div class="feature-title">
+                        <h3><i class="fas fa-dumbbell"></i> Weight Training</h3>
                     </div>
-                    <div class="section-description">
+                    <div class="feature-info">
                         <p>
-                            Located conveniently within the gym, stop by our shake bar for pre and post workout necessities including protein shakes made to order, protein bars and other snacks, as well as a wide array of supplements, to take home.
+                            From bodybuilding to powerlifting and everything in between, Insanity gym has the equipment
+                            to help you reach your goals. With dumbells up to 150lbs, 7 squat racks, 5 deadlift
+                            platforms, 2 competition benches, and a variety of plate loaded and pin loaded machines, we
+                            have everything you need.
                         </p>
                     </div>
-                    <div class="inventory-lists">
-                        <div class="list1">
-                            <h4>The Shake Bar</h4>
-                            <ul>
-                                <li>Protein Shakes Made to Order</li>
-                                <li>Pre Workout Drinks & Powder</li>
-                                <li>BCAAs & EAAs</li>
-                                <li>Protein Bars & Other Snacks</li>
-                                <li>Bottled Water</li>
-                                <li>Energy Drinks</li>
-                                <li>Ready to Drink Protein</li>
-                            </ul>
-                        </div>
-                        <div class="list2">
-                            <h4>Retail and Merchandise</h4>
-                            <ul>
-                                <li>Protein Tubs</li>
-                                <li>Pre Workout</li>
-                                <li>Intra Workout</li>
-                                <li>Custom Apparel</li>
-                                <li>Shaker Bottles</li>
-                                <li>Combination Locks</li>
-                                <li>Ear Buds</li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">
+                        <h3><i class="fas fa-running"></i> General Fitness</h3>
+                    </div>
+                    <div class="feature-info">
+                        <p>
+
+                            If your goals are to improve your overall health and wellness, we have everything you need.
+                            We have cardio equipment spanning two floors including 8 stepmills, 15+ treadmills, row
+                            machines, exercise bikes, spin bikes, ellipticals, arc trainers and even a Jacob’s Ladder.
+                            In addition to cardio equipment, we have stretching areas with mats, foam rollers, bands,
+                            light weights, and much more.
+                        </p>
                     </div>
                 </div>
-                <div class="image-area">
-                    <img src="" alt="">
+                <div class="feature">
+                    <div class="feature-title">
+                        <h3><i class="fas fa-biking feature-trigger"></i> Functional Training</h3>
+                    </div>
+                    <div class="feature-info">
+                        <p>
+                            With 60 feet of turf with a sled, stackable plyometric boxes, weighted medicine balls,
+                            battle ropes, squat racks, and deadlift platforms our functional training room has all the
+                            equipment you need to take your training to the next level.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">
+                        <h3><i class="fas fa-users"></i> Group Exercise</h3>
+                    </div>
+                    <div class="feature-info">
+                        <p>
+                            From early morning to evening classes, our certified instructors will provide you with a
+                            challenging, yet fun workout! All levels of fitness are welcome.
+                        </p>
+                    </div>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+        <div class="img-area">
+            <div class="container">
+                <div class="image-container">
+                    <img src="img/about-fitness-edited.png" alt="">
                 </div>
             </div>
-        </section>
-<!-- Section 2 End -->
+        </div>
+    </section>
+    <!-- Section 1 End -->
 
-<!-- Section 3 Price Plan -->
+    <!-- Section 2 Gym Shop Area -->
+    <section class="gym-shop">
+        <div class="container2">
+            <div class="shop-description">
+                <div class="section-title feature-trigger2">
+                    <h2>The Supplement Store</h2>
+                    <h2>& Shake Bar</h2>
+                </div>
+                <div class="section-description">
+                    <p>
+                        Located conveniently within the gym, stop by our shake bar for pre and post workout necessities
+                        including protein shakes made to order, protein bars and other snacks, as well as a wide array
+                        of supplements, to take home.
+                    </p>
+                </div>
+                <div class="inventory-lists">
+                    <div class="list1">
+                        <h4>The Shake Bar</h4>
+                        <ul>
+                            <li>Protein Shakes Made to Order</li>
+                            <li>Pre Workout Drinks & Powder</li>
+                            <li>BCAAs & EAAs</li>
+                            <li>Protein Bars & Other Snacks</li>
+                            <li>Bottled Water</li>
+                            <li>Energy Drinks</li>
+                            <li>Ready to Drink Protein</li>
+                        </ul>
+                    </div>
+                    <div class="list2">
+                        <h4>Retail and Merchandise</h4>
+                        <ul>
+                            <li>Protein Tubs</li>
+                            <li>Pre Workout</li>
+                            <li>Intra Workout</li>
+                            <li>Custom Apparel</li>
+                            <li>Shaker Bottles</li>
+                            <li>Combination Locks</li>
+                            <li>Ear Buds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="image-area">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Price Plan -->
     <section class="prices-area">
         <div class="prices">
-            <div class="membership">
+            <div class="membership membership-trigger">
                 <h2 class="membership-type">
                     1 Month
                 </h2>
@@ -214,24 +233,24 @@
                     <a href="signup.html"><button class="join">Join Now</button></a>
                 </div>
             </div>
-        </div>   
-    </section>
-<!-- Section 3 end-->
-
-<!-- Section 4 Join Us -->
-    <section class="join-us">
-        <div class="container2">
-            <div class="overlay"></div>
-            <h3 id="banner-text">YOUR FITNESS STARTS HERE
-            SAVE TIME AND SIGN UP <span class="highlight">ONLINE</span> -
-            BECOME A MEMBER !
-        </h3>
-        <a href="signup.html"><button class="join">Join Now</button></a>
         </div>
     </section>
-<!-- Section 4 end -->
+    <!-- Section 3 end-->
 
-<!-- Section 5 Contact Us -->
+    <!-- Section 4 Join Us -->
+    <section class="join-us">
+        <div class="container2 join-trigger">
+            <div class="overlay"></div>
+            <h3 id="banner-text" class="banner-title">YOUR FITNESS STARTS HERE
+                SAVE <span class="highlight-1">TIME</span> AND SIGN UP <span class="highlight-1">ONLINE</span> -
+                BECOME A <span class="highlight-1">MEMBER</span> !
+            </h3>
+            <a href="signup.html"><button class="join">Join Now</button></a>
+        </div>
+    </section>
+    <!-- Section 4 end -->
+
+    <!-- Section 5 Contact Us -->
     <section class="contact-us">
         <div class="contact-info">
             <h3>Contact Us</h3>
@@ -242,7 +261,7 @@
             </div>
             <div class="method">
                 <p>
-                    <i class="fas fa-phone-square-alt"></i>   0208-XXX-XXX
+                    <i class="fas fa-phone-square-alt"></i> 0208-XXX-XXX
                 </p>
             </div>
             <div class="method">
@@ -257,20 +276,21 @@
             <i class="fab fa-instagram-square fa-2x"></i>
         </div>
     </section>
-<!-- Section 5 end -->
+    <!-- Section 5 end -->
     </div>
-<!-- Footer -->
-    <footer>
+    <!-- Footer -->
+    <footer class="footer-trigger">
         <p>Insanity Gym - Portfolio Project| Designed and Developed by Nuh Mohamed Ali</p>
     </footer>
-<!-- Footer End -->
+    <!-- Footer End -->
 
-<!-- Back to top icon -->
+    <!-- Back to top icon -->
     <div class="back-top">
         <a href="#nav"><i class="fas fa-angle-double-up fa-2x"></i></a>
     </div>
-<!-- Back to top icon -->
-
+    <!-- Back to top icon -->
+    <script src="script/gsap.js" defer></script>
     <script src="script/main.js"></script>
 </body>
+
 </html>

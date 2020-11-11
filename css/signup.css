@@ -445,7 +445,7 @@ a {
 
 header {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -475,7 +475,7 @@ header .showcase {
 
 header .showcase .title-area {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -486,7 +486,7 @@ header .showcase .title-area .main-title {
 }
 
 header .showcase .title-area .highlight {
-  color: #e65f21;
+  color: white;
 }
 
 .gym-shop {
@@ -578,8 +578,8 @@ header .showcase .title-area .highlight {
   z-index: 2;
 }
 
-.join-us h3 .highlight {
-  color: #e65f21;
+.join-us h3 .highlight-1 {
+  color: white;
 }
 
 @media screen and (max-width: 770px) {
@@ -646,6 +646,7 @@ footer {
   padding: 2rem;
   color: white;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .title-button {
