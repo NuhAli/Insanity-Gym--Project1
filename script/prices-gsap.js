@@ -13,8 +13,7 @@ window.addEventListener('load', () => {
         })
         .to('.title-button', {
             duration: 1,
-            y: '50px',
-            opacity: 1
+            y: '0',
         })
         .to('.highlight', {
             duration: 1,

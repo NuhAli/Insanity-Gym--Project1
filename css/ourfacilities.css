@@ -490,9 +490,8 @@ header .showcase .title-area h3 {
   transform: translateX(100vw);
 }
 
-header .showcase .title-area button {
-  opacity: 0;
-  transform: translateY(-50px);
+header .showcase .title-area .title-button {
+  transform: translateY(100%);
 }
 
 header .showcase .title-area .highlight {
@@ -888,9 +887,8 @@ footer {
   transform: translateX(100vw);
 }
 
-.facilities-header .showcase .title-area button {
-  opacity: 0;
-  transform: translateY(-50px);
+.facilities-header .showcase .title-area .title-button {
+  transform: translateY(100%);
 }
 
 .facilities-header .showcase .title-area .highlight {

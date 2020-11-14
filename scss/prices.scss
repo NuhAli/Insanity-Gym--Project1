@@ -50,9 +50,8 @@
                 transform: translateX(100vw);
             }
 
-            button {
-                opacity: 0;
-                transform: translateY(-50px);
+            .title-button {
+                transform: translateY(100%);
             }
             
             .highlight {
