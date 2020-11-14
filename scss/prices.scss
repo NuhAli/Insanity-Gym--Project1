@@ -49,6 +49,11 @@
             h3 {
                 transform: translateX(100vw);
             }
+
+            button {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
             
             .highlight {
                 color: white;

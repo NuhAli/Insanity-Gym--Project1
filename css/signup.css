@@ -490,6 +490,11 @@ header .showcase .title-area h3 {
   transform: translateX(100vw);
 }
 
+header .showcase .title-area button {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
 header .showcase .title-area .highlight {
   color: white;
 }

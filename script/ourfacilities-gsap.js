@@ -13,10 +13,10 @@ window.addEventListener('load', () => {
             x: '0',
             ease: "sine.in",
         })
-        .from('.title-button', {
+        .to('.title-button', {
             duration: 1,
             y: '50px',
-            opacity: 0
+            opacity: 1
         })
         .to('.highlight', {
             duration: 1,
