@@ -490,12 +490,12 @@ header .showcase .title-area h3 {
   transform: translateX(100vw);
 }
 
-header .showcase .title-area .title-button {
-  transform: translateY(100%);
-}
-
 header .showcase .title-area .highlight {
   color: white;
+}
+
+header .showcase .button-area {
+  opacity: 0;
 }
 
 .gym-shop {
@@ -815,12 +815,12 @@ footer {
   transform: translateX(100vw);
 }
 
-.prices-header .showcase .title-area .title-button {
-  transform: translateY(100%);
-}
-
 .prices-header .showcase .title-area .highlight {
   color: white;
+}
+
+.prices-header .showcase .button-area {
+  opacity: 0;
 }
 
 .prices-area {

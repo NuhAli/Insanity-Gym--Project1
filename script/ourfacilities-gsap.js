@@ -13,9 +13,10 @@ window.addEventListener('load', () => {
             x: '0',
             ease: "sine.in",
         })
-        .to('.title-button', {
+        .to('.button-area', {
+            delay: 0.5,
             duration: 1,
-            y: '0',
+            opacity: 1,
         })
         .to('.highlight', {
             duration: 1,

@@ -117,14 +117,12 @@
             h3 {
                 transform: translateX(100vw);
             }
-
-            .title-button {
-                transform: translateY(100%);
-            }
-            
             .highlight {
                 color: white;
             }
+        }
+        .button-area {
+            opacity: 0;
         }
     }
 }
