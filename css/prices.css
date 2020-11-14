@@ -302,6 +302,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -311,7 +312,6 @@ body {
   overflow-x: hidden;
   background-color: #353132;
   position: relative;
-  scroll-behavior: smooth;
 }
 
 body .back-top {
@@ -482,7 +482,12 @@ header .showcase .title-area {
 }
 
 header .showcase .title-area .main-title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  transform: translateX(-100vw);
+}
+
+header .showcase .title-area h3 {
+  transform: translateX(100vw);
 }
 
 header .showcase .title-area .highlight {
@@ -757,6 +762,57 @@ footer {
   border: none;
   transform: scale(1.05);
   transition: all 0.5s ease;
+}
+
+.prices-header {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/prices-header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center;
+  border-bottom: 2px solid #e65f21;
+}
+
+.prices-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prices-header .showcase {
+  z-index: 2;
+}
+
+.prices-header .showcase .title-area {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prices-header .showcase .title-area .main-title {
+  margin-bottom: 1rem;
+  transform: translateX(-100vw);
+}
+
+.prices-header .showcase .title-area h3 {
+  transform: translateX(100vw);
+}
+
+.prices-header .showcase .title-area .highlight {
+  color: white;
 }
 
 .prices-area {

@@ -4,6 +4,59 @@
 @import 'common';
 @import 'buttons';
 
+// Header
+
+.prices-header {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/prices-header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+    border-bottom: 2px solid $primary-color;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    .showcase {
+        z-index: 2;
+
+        .title-area {
+            padding: 1rem;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            .main-title {
+                margin-bottom: 1rem;
+                transform: translateX(-100vw);
+            }
+
+            h3 {
+                transform: translateX(100vw);
+            }
+            
+            .highlight {
+                color: white;
+            }
+        }
+    }
+}
+
 // Section 1 Prices Area
 .prices-area {
     background-color: $background-color2;

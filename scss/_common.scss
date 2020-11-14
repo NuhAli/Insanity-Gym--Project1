@@ -10,6 +10,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
     overflow-x: hidden;
     background-color: $background-color;
     position: relative;
-    scroll-behavior: smooth;
     .back-top {
         margin: 1rem;
         position: absolute;
@@ -188,7 +188,12 @@ header {
             text-transform: uppercase;
 
             .main-title {
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
+                transform: translateX(-100vw);
+            }
+
+            h3 {
+                transform: translateX(100vw);
             }
 
             .highlight {

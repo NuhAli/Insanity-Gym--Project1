@@ -302,6 +302,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -311,7 +312,6 @@ body {
   overflow-x: hidden;
   background-color: #353132;
   position: relative;
-  scroll-behavior: smooth;
 }
 
 body .back-top {
@@ -482,7 +482,12 @@ header .showcase .title-area {
 }
 
 header .showcase .title-area .main-title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  transform: translateX(-100vw);
+}
+
+header .showcase .title-area h3 {
+  transform: translateX(100vw);
 }
 
 header .showcase .title-area .highlight {
@@ -871,6 +876,11 @@ footer {
 
 .facilities-header .showcase .title-area .main-title {
   margin-bottom: 1rem;
+  transform: translateX(-100vw);
+}
+
+.facilities-header .showcase .title-area h3 {
+  transform: translateX(100vw);
 }
 
 .facilities-header .showcase .title-area .highlight {

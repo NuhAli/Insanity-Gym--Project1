@@ -111,8 +111,13 @@
 
             .main-title {
                 margin-bottom: 1rem;
+                transform: translateX(-100vw);
             }
 
+            h3 {
+                transform: translateX(100vw);
+            }
+            
             .highlight {
                 color: white;
             }
