@@ -20,12 +20,13 @@ window.addEventListener('load', () => {
             duration: 1,
             color: '#e65f21'
         })
-        .from('.membership', {
-            stagger: 0.3,
-            duration: 0.5,
-            opacity: 0,
-            y: '50px'
-        })
+})
+
+gsap.from('.membership', {
+    stagger: 0.3,
+    duration: 0.5,
+    opacity: 0,
+    y: '50px'
 })
 
 gsap.from('.join', {
